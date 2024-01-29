@@ -24,7 +24,7 @@ int main()
     signal(SIGUSR2, print_msg);
     while (1)
     {
-        sleep(1);
+        pause();
     }
     
     return 0;
