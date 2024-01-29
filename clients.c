@@ -51,7 +51,7 @@ void send_msg(int pid, char *msg)
         }
         msg++;
     }
-    //Traitement le dernier caractère du bit
+    //Traitement du dernier caractère "le caractère nul"
     for (int i = 7; i >= 0; i--) {
     // Bits 1
     int bit = (*msg >> i) & 1;
